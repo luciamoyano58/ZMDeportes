@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZM FIT - Revista Fitness</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Portada */
+    .hero {
+      background: url("portada zm.png") center/cover no-repeat;
+      color: rgba(27, 143, 178, 0.616);
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 60px;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    /* Carrusel */
+    .carousel {
+    position: relative;
+    overflow: hidden;
+    height: 200px; /* Reducimos altura */
+    margin-top: 20px; /* Separación de la portada */
+    border-radius: 10px; /* Bordes suaves para estética */
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    max-width: 90%; /* No tan ancho */
+    margin-left: auto;
+    margin-right: auto; /* Centrado */
+  }
+    .carousel img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    display: none;
+  }
+    .carousel img.active {
+      display: block;
+      animation: fadeIn 1s;
+    }
+   
+
+
+    /* Secciones */
+    section {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px); /* la levanta */
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2); /* sombra más fuerte */
+}
+    .caption {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      color: rgb(36, 170, 155);
+      text-align: center;
+      padding: 10px;
+    }
+    .caption h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+    .caption p {
+      margin: 5px 0 0 0;
+      font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Portada -->
+  <div class="hero">
+    <h1>ZM FIT</h1>
+    <p>Revista Fitness - Estilo de vida saludable</p>
+  </div>
+
+  <!-- Carrusel -->
+  <div class="carousel">
+    <img src="carrusel 11.png" class="active">
+    <img src="carrusel 22.png">
+    <img src="carrusel 33.png">
+    <img src="carrusel 44.png">
+  </div>
+
+  <!-- Comida Fitness -->
+  <section id="comida">
+    <div class="card">
+      <a href="#"><img src="https://www.recetasgratis.net/files/og_thumbnail/uploads/recipe/cover/201801/ensalada-fitness-de-pollo-600x400.jpg"><div class="caption"><h3>Ensalada Proteica</h3><p>$8 USD</p></div></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="https://www.pequerecetas.com/wp-content/uploads/2019/05/batido-de-proteinas.jpg"><div class="caption"><h3>Batido Proteico</h3><p>$5 USD</p></div></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="https://i.pinimg.com/736x/02/d0/77/02d0774f6d4401b2b48c5e4a6c99ad4c.jpg"><div class="caption"><h3>Bowl Energético</h3><p>$7 USD</p></div></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="https://i.pinimg.com/736x/0a/57/76/0a57764c40f6f3a1479e1d5414a1394b.jpg"><div class="caption"><h3>Snack Fitness</h3><p>$4 USD</p></div></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="https://i.pinimg.com/736x/36/26/df/3626df57cf0d86863d9a99f05f1efef1.jpg"><div class="caption"><h3>Pizza Saludable</h3><p>$9 USD</p></div></a>
+    </div>
+  </section>
+
+  <!-- Ropa Fitness -->
+  <section id="ropa">
+    <div class="card">
+      <a href="#"><img src="https://i.pinimg.com/564x/c7/16/cc/c716cc2cfe23cc73e4d4ac47a10e49c2.jpg"><div class="caption"><h3>Conjunto Mujer</h3><p>$35 USD</p></div></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="https://i.pinimg.com/736x/21/4d/14/214d14c3293f1ac251c356b812e6c040.jpg"><div class="caption"><h3>Conjunto Hombre</h3><p>$40 USD</p></div></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="https://i.pinimg.com/736x/8c/59/f1/8c59f1cdd818f58577597a6b5011f2a5.jpg"><div class="caption"><h3>Top Deportivo</h3><p>$20 USD</p></div></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="https://i.pinimg.com/736x/7a/f6/ab/7af6abdd5f39c4940b81b8a62f6a4e1c.jpg"><div class="caption"><h3>Leggins Premium</h3><p>$25 USD</p></div></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="https://i.pinimg.com/736x/41/6a/31/416a3188f04e06e540228130ac155d80.jpg"><div class="caption"><h3>Shorts Deportivos</h3><p>$18 USD</p></div></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>ZM FIT</strong></p>
+    <p>Lucia Moyano & Andrea Zoplan - Dueñas</p>
+    <p>📱 381 358 0366</p>
+    <p>📸 Instagram: <a href="https://instagram.com/zmf" style="color:white;">@zmf</a></p>
+    <p>&copy; 2025 ZM FIT - Todos los derechos reservados
+
+    </p>
+  </footer>
+
+  <!-- Script del Carrusel -->
+  <script>
+    let current = 0;
+    const images = document.querySelectorAll('.carousel img');
+    setInterval(() => {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+    }, 3000);
+  </script>
+
+</body>
+</html>

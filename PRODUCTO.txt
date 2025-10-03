@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto Destacado</title>
+  <style>
+    /* Paleta turquesa */
+    :root {
+      --turquesa-claro: #A0E7E5;
+      --turquesa-medio: #00B4D8;
+      --turquesa-oscuro: #0077B6;
+      --blanco: #ffffff;
+      --gris-suave: #f5f5f5;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--gris-suave);
+      color: var(--turquesa-oscuro);
+    }
+
+    header {
+      background-color: var(--turquesa-medio);
+      color: var(--blanco);
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .producto-imagen {
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .producto-imagen:hover {
+      transform: scale(1.05);
+    }
+
+    .producto-info {
+      max-width: 500px;
+      background-color: var(--blanco);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+
+    .producto-info h2 {
+      color: var(--turquesa-medio);
+      margin-bottom: 20px;
+    }
+
+    .producto-info p {
+      font-size: 1.1em;
+      line-height: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .boton-compra {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: var(--turquesa-oscuro);
+      color: var(--blanco);
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .boton-compra:hover {
+      background-color: var(--turquesa-medio);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--turquesa-claro);
+      color: var(--turquesa-oscuro);
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Producto Destacado
+  </header>
+
+  <main>
+    <img class="producto-imagen" src="https://via.placeholder.com/400" alt="Foto del producto">
+    
+    <div class="producto-info">
+      <h2>Nombre del Producto</h2>
+      <p>Este es un producto increíble que te ayudará a mejorar tu día a día. Fabricado con materiales de alta calidad, combina diseño y funcionalidad de manera única.</p>
+      <p><strong>Precio:</strong> $1999</p>
+      <a href="#" class="boton-compra">Comprar Ahora</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Tu Empresa. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>Ss
